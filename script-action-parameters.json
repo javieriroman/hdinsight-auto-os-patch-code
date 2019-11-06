@@ -1,0 +1,60 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "clusterName": {
+        "value": "autopatchjrs"
+      },
+      "rgvnet": {
+        "value": "test"
+      },
+      "vnetname": {
+        "value": "remote-local"
+      },
+      "subnetname": {
+        "value": "ase"
+      },
+      "defaultStorageAccountName": {
+        "value": "centralusjrscentralus"
+      },
+      "defaultStorageAccountKey": {
+        "value": null
+      },
+      "scriptActionUriforHeadnode": {
+        "value": "https://hdiconfigactions.blob.core.windows.net/linuxospatchingrebootconfigv02/install-updates-schedule-reboots.sh"
+      },
+      "scriptActionUriforWorkernode": {
+        "value": "https://hdiconfigactions.blob.core.windows.net/linuxospatchingrebootconfigv02/install-updates-schedule-reboots.sh"
+      },
+      "nameofscriptActionforHeadnode": {
+        "value": "nameofscriptActionforHeadnode"
+      },
+      "nameofscriptActionforWorkernode": {
+        "value": "nameofscriptActionforWorkernode"
+      },
+      "clusterLoginUserName": {
+        "value": "admin"
+      },
+      "clusterLoginPassword": {
+        "value": null
+      },
+      "location": {
+        "value": "centralus"
+      },
+      "clusterVersion": {
+        "value": "4.0"
+      },
+      "clusterWorkerNodeCount": {
+        "value": 2
+      },
+      "clusterKind": {
+        "value": "SPARK"
+      },
+      "sshUserName": {
+        "value": "sshuser"
+      },
+      "sshPassword": {
+        "value": null
+      }
+    }
+  }
