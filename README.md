@@ -1,0 +1,1 @@
+# hdinsight-auto-os-patch-code
